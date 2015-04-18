@@ -1,0 +1,14 @@
+<section class="page" id="home">
+    <div class="hello section">
+        <div class="section-heading">{{ 'home.hello.heading' | translate }}</div>
+
+        <div class="section-content hello-controls left-column">
+            <accordion>
+                <accordion-group  ng-repeat="ch in churchList" heading="{{ch.name}}">
+                    {{ ch.address }}
+                </accordion-group>
+            </accordion>
+        </div>
+
+    </div>
+</section>

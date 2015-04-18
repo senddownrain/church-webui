@@ -1,0 +1,23 @@
+<div class="navigation" >
+    <nav role="navigation">
+        <div class="logo"></div>
+
+        <div class="navigation-links">
+            <a ui-sref="home" ui-sref-active="active">{{ 'navigation.home' | translate }}</a>
+            <a ui-sref="churchList" ui-sref-active="active">{{ 'navigation.churchList' | translate }}</a>
+            <a ui-sref="about" ui-sref-active="active">{{ 'navigation.about' | translate }}</a>
+            <!-- <a ui-sref="security" ui-sref-active="active" ng-if="currentUser.permissions.securityTab">{{ 'navigation.security' | translate }}</a>-->
+        </div>
+
+        <div ng-if="currentUser.isLoggedIn()" class="user-role-toggle" >
+            {{ currentUser.name }}
+        </div>
+
+        <div ng-if="!currentUser.isLoggedIn()" class="user-role-menu" ng-click="showLoginForm()" ng-show="showUserRoleMenu">
+            <div class="arrow"></div>
+            <div class="menu-item">
+                {{ (!currentUser.isAdmin() ? 'global.userRole.admin' : 'global.userRole.user') | translate }}
+            </div>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,22 @@
+<div class="panel panel-default confirm-panel" ng-controller="ConfirmController">
+    <div class="panel-heading">
+        <div class="heading">
+        </div>
+        <div class="close-icon" ng-click="cancel()">&times;</div>
+    </div>
+
+    <div class="panel-body">
+        <p>
+            {{ data.config.message | translate }}
+        </p>
+
+        <div class="buttons-group">
+            <button type="button" ng-click="ok()">
+                {{ 'global.confirm.button.ok' | translate }}
+            </button>
+            <button type="button" ng-click="cancel()" class="cancel-button">
+                {{ 'global.confirm.button.cancel' | translate }}
+            </button>
+        </div>
+    </div>
+</div>

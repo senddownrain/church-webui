@@ -1,0 +1,36 @@
+{
+    "global": {
+        "serverError": "Something went wrong, please try again",
+        "button": {
+            "ok": "OK",
+            "cancel": "Cancel",
+            "close": "Close"
+        }
+    },
+    "navigation":{
+        "home": "Home",
+        "churchList": "Church List",
+        "about": "About"
+    },
+
+    "login": {
+        "data": {
+            "password": {
+                "placeholder": "Password",
+                "error": {
+                    "required": "Password is required",
+                    "incorrect": "Wrong password, please try again"
+                }
+            }
+        },
+        "button": {
+            "login": "Log In"
+        }
+    },
+
+    "home": {
+        "hello": {
+            "heading": "Hello"
+        }
+    }
+}
